@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "product_name": "jacket",
+        "price": "400",
+        "price_befor_discount": "500",
+        "type": "clothes",
+        "details": "Sleek, meticulously crafted jacket that blends timeless elegance with practical functionality, made from premium wind and rain-resistant materials for ultimate comfort in all weather conditions.   Features modern details including a durable zipper closure and practical side pockets, available in versatile classic colors to suit every style.   Perfect for both daily wear and formal occasions, thanks to its slim-fit design that enhances your silhouette without compromising comfort.   Choose this jacket for a polished, sophisticated look that effortlessly combines fashion and practicality in every\u00a0step\u00a0you\u00a0take!",
+        "img_path": "img\/jacket.jpg",
+        "ratings": [
+            1,
+            3,
+            2,
+            5
+        ],
+        "rating": 2.8
+    },
+    {
+        "id": 2,
+        "product_name": "watch",
+        "price": "200",
+        "price_befor_discount": "300",
+        "type": "accessories",
+        "details": "Elegant timepiece crafted with precision engineering, featuring a sleek stainless steel case and scratch-resistant sapphire crystal for enduring clarity.   Showcases a minimalist dial with luminous hands and markers, paired with a genuine leather strap that combines sophistication with all-day comfort.   Water-resistant up to 50 meters, perfect for daily wear, business meetings, or formal events, blending timeless design with modern functionality.   Powered by a reliable automatic movement, this watch effortlessly elevates your style while keeping you punctual in every moment.   Choose it to adorn your wrist with a symbol of refined taste and unwavering\u00a0reliability!\u00a0\u231a\u2728",
+        "img_path": "img\/watch.jpg"
+    },
+    {
+        "id": 3,
+        "product_name": "Zamalek_Shirt",
+        "price": "900",
+        "price_befor_discount": "1000",
+        "type": "clothes",
+        "details": "Innovative athletic tee crafted from ultra-lightweight, breathable fabric designed to wick moisture and keep you cool during intense workouts for peak performance.   Features advanced anti-bacterial technology to combat odors, with a flexible raglan sleeve design that ensures unrestricted movement and minimizes skin friction.   Boasts modern details like reinforced seams and subtle reflective accents for safety, available in bold, sporty colors to match any style.   Perfect for running, high-intensity training, or casual wear, thanks to its quick-drying, sweat-resistant fabric that stays comfortable all day.   Choose it to transform every workout into a stylish, energizing experience!",
+        "img_path": "img\/t-shirt.jpg"
+    },
+    {
+        "id": 4,
+        "product_name": "Blak_T-shirt",
+        "price": "200",
+        "price_befor_discount": "300",
+        "type": "clothes",
+        "details": "Classic, sleek black tee crafted from premium soft cotton fabric for all-day comfort and durability that withstands frequent washing.   Featuring a clean, solid design with a perfectly rounded neckline and tailored sleeves that flatter every body type, reinforced with double stitching for long-lasting polish.   Ideal for daily wear or as a layering piece under jackets, adding a modern edge to your outfit whether paired with jeans or casual trousers.   Fade-resistant deep black hue that effortlessly complements any accessories or colors for cohesive, mysterious elegance.   Choose it as a wardrobe essential that embodies effortless simplicity and timeless\u00a0style",
+        "img_path": "img\/blak_shirt.jpg"
+    },
+    {
+        "id": 5,
+        "product_name": "Sweater",
+        "price": "300",
+        "price_befor_discount": "400",
+        "type": "clothes",
+        "details": "Classic-knit sweater crafted from luxurious, ultra-soft merino wool for exceptional warmth without bulk, paired with natural breathability to regulate body temperature.   Features a relaxed crew neck and long sleeves with subtle cable-knit detailing, offering a polished, modern silhouette that complements all body types.   Perfect for chilly days or as an elegant layering piece under coats, ideal for both casual outings and office settings with its rich, fade-resistant black hue.   Reinforced with precision stitching for long-lasting durability and a smooth, itch-free texture that\u2019s gentle on sensitive skin.   Choose it to elevate your winter wardrobe with understated sophistication and cozy\u00a0luxury!\u00a0\ud83d\udda4",
+        "img_path": "img\/sweater.jpg"
+    },
+    {
+        "id": 6,
+        "product_name": "Wallet",
+        "price": "150",
+        "price_befor_discount": "200",
+        "type": "accessories",
+        "details": "Sleek leather wallet crafted from premium scratch-resistant genuine leather, featuring a slim, practical design that fits seamlessly in your pocket.   Includes organized card slots, a transparent ID window, and a spacious cash compartment with a durable zipper closure for ultimate security.   Enhanced with hand-stitched detailing and color-matched edges for a luxurious finish that withstands daily wear.   Equipped with RFID-blocking technology to safeguard your data, available in timeless shades like rich brown and bold black.   Perfect for everyday use or formal occasions\u2014an ideal gift that blends sophistication, security, and functionality!\u00a0\ud83d\udcbc",
+        "img_path": "img\/wallet.jpg"
+    },
+    {
+        "id": 7,
+        "product_name": "smart watch",
+        "price": "200",
+        "price_befor_discount": "300",
+        "type": "accessories",
+        "details": "Elegant timepiece crafted with precision engineering, featuring a sleek stainless steel case and scratch-resistant sapphire crystal for enduring clarity. Showcases a minimalist dial with luminous hands and markers, paired with a genuine leather strap that combines sophistication with all-day comfort. Water-resistant up to 50 meters, perfect for daily wear, business meetings, or formal events, blending timeless design with modern functionality. Powered by a reliable automatic movement, this watch effortlessly elevates your style while keeping you punctual in every moment. Choose it to adorn your wrist with a symbol of refined taste and unwavering reliability! \u231a\u2728",
+        "img_path": "https:\/\/m.media-amazon.com\/images\/I\/61I2vgUF45L.__AC_SX300_SY300_QL70_ML2_.jpg"
+    }
+]
