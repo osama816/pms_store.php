@@ -10,5 +10,11 @@
         "name": "osama 0",
         "email": "oe98515@gmail.com",
         "password": "$2y$10$HfaAy.dkrFJuD\/\/sBY2b6uMdNc2WiRXrt.\/3Eq4tdQng8k\/jUuWuS"
+    },
+    {
+        "id": 5,
+        "name": "os",
+        "email": "elgendyo@gmail.com",
+        "password": "$2y$10$jwGjBMrlqJVBKVo8BDor0.s\/KjeQO7Od73RgV4\/nkUDJtX1o\/Eo7a"
     }
 ]
