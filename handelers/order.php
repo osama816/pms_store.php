@@ -3,13 +3,9 @@
 require_once "../core/function.php";
 require_once "../core/validete.php";
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $address = $_POST['address'];
-    $phone = $_POST['phone'];
-    $notes = $_POST['notes'];
-    $total_price = $_POST['total_price'];
-
+    foreach ($_POST as $key => $value) {
+        $$key = htmlspecialchars(trim($value));
+    }
 }
 
 $error = validate_order( $name, $email,$address,$phone,$notes);
