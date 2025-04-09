@@ -1,1 +1,20 @@
-[]
+[
+    {
+        "id": 1,
+        "name": "elgendy",
+        "email": "elgendyo240@gmail.com",
+        "address": "Elbuhayra",
+        "phone": "01202665670",
+        "notes": "good",
+        "total_price": "1050"
+    },
+    {
+        "id": 2,
+        "name": "osama",
+        "email": "oe98515@gmail.com",
+        "address": "Elbuhayra",
+        "phone": "01202665670",
+        "notes": "good",
+        "total_price": "200"
+    }
+]

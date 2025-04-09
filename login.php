@@ -29,6 +29,12 @@
                         <div class="mb-3">
                             <a href="form_register.php" class="btn btn-success ">Creat New account</a>
                         </div>
+                        <div class="mb-3">
+                        <span >OR</span>
+                        </div>
+                        <div class="mb-3">
+                            <a href="form_Login_admin.php" class="btn btn-success "> Login Admin</a>
+                        </div>
                         </div>
                         </div>
                     </div>

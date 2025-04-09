@@ -2,8 +2,9 @@
 require_once "../core/function.php";
 require_once "../core/validete.php";
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $email = $_POST['email'];
-    $password = trim($_POST['password']);
+    foreach ($_POST as $key => $value) {
+        $$key = htmlspecialchars(trim($value));
+    }
 }
 
     $error = validate_Login( $email, $password);

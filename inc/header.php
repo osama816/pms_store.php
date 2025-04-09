@@ -61,12 +61,8 @@ if (session_status() === PHP_SESSION_NONE) {
                     <?php if (isset($_SESSION["user"])): ?>
                         <li class="nav-item"><a class="dropdown-item mb-lg-0 ms-lg-4" href="handelers/logout.php">Logout</a>
                         </li>
-                        <li class="nav-item"><a class="dropdown-item mb-lg-0 ms-lg-4"
-                                href="form_Login_admin.php">control</a></li>
                     <?php else: ?>
                         <li class="nav-item"><a class="dropdown-item mb-lg-0 ms-lg-4" href="login.php">Login</a></li>
-                        <li class="nav-item"><a class="dropdown-item mb-lg-0 ms-lg-4"
-                                href="form_Login_admin.php">control</a></li>
                     <?php endif; ?>
                 </ul>
             </div>

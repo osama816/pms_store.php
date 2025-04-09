@@ -6,11 +6,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     foreach ($_POST as $key => $value) {
         $$key = htmlspecialchars(trim($value));
     }
-    // $name = $_POST['name'];
-    // $email = $_POST['email'];
-    // $password = $_POST['password'];
-    // $confirm_password = $_POST['confirm_password'];
-
 
     $error = validateRegister($name, $email, $password, $confirm_password);
     if (!empty($error)) {
