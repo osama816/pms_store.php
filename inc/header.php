@@ -1,3 +1,4 @@
+<?php require_once('core/function.php'); ?>
 <?php
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
@@ -48,11 +49,18 @@ if (session_status() === PHP_SESSION_NONE) {
                         <i class="bi-cart-fill me-1"></i>
                         Cart
                         <span class="badge bg-dark text-white ms-1 rounded-pill">
-                            <?php if (isset($_COOKIE["cart_count"])) {
-                                echo $_COOKIE["cart_count"];
-                            } else {
+                            <?php
+                              $file = realpath(__DIR__ . "/../data/cart.json");
+                              $cart=get_jsonfile($file);
+                            if (!empty($cart)){
+                            $count=0;
+                           foreach ($cart as $product){
+                                $count++;
+                              }
+                              echo $count;
+                              }else{
                                 echo 0;
-                            }
+                              }
                             ?>
                         </span>
                     </button>

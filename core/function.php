@@ -90,7 +90,6 @@ function addcart($price, $product_name, $quantity)
     ];
     $cart[] = $data;
     file_put_contents($file, json_encode($cart, JSON_PRETTY_PRINT));
-    isset($_COOKIE["cart_count"]) ? setcookie("cart_count", $_COOKIE["cart_count"] + 1, time() + 90000, "/") : setcookie("cart_count", 1, time() + 90000, "/");
     return true;
 }
 
@@ -111,7 +110,6 @@ function deletproduct_cart($id)
     if (!$found) {
         return false;
     }
-    isset($_COOKIE["cart_count"]) ? setcookie("cart_count", $_COOKIE["cart_count"] - 1, time() + 90000, "/") : "0";
     file_put_contents($file, json_encode(array_values($cart), JSON_PRETTY_PRINT));
     return true;
 }

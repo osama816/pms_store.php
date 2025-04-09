@@ -15,7 +15,7 @@ if (!empty(get_jsonfile($file))) {
 }
 
 ?>
-?>
+
 
 <!-- Section-->
 <section class="py-5">
