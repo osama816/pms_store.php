@@ -50,6 +50,8 @@
             </li>
         </ul>
     </div>
+    <div class="col-8 mx-auto">
+    <h2> product </h2>
     <div class="container px-4 px-lg-5 mt-5">
         <div class="row">
             <div class="col-12">
@@ -90,6 +92,7 @@
                 </table>
             </div>
         </div>
+    </div>
     </div>
 </section>
 <?php require_once('inc/footer.php'); ?>

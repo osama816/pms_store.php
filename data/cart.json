@@ -1,1 +1,8 @@
-[]
+[
+    {
+        "id": 1,
+        "price": "400",
+        "product_name": "jacket",
+        "quantity": "1"
+    }
+]
