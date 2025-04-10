@@ -13,7 +13,7 @@
             2,
             5
         ],
-        "rating": 2.8
+        "rating": 2.79999999999999982236431605997495353221893310546875
     },
     {
         "id": 2,
@@ -22,7 +22,7 @@
         "price_befor_discount": "300",
         "type": "accessories",
         "details": "Elegant timepiece crafted with precision engineering, featuring a sleek stainless steel case and scratch-resistant sapphire crystal for enduring clarity.   Showcases a minimalist dial with luminous hands and markers, paired with a genuine leather strap that combines sophistication with all-day comfort.   Water-resistant up to 50 meters, perfect for daily wear, business meetings, or formal events, blending timeless design with modern functionality.   Powered by a reliable automatic movement, this watch effortlessly elevates your style while keeping you punctual in every moment.   Choose it to adorn your wrist with a symbol of refined taste and unwavering\u00a0reliability!\u00a0\u231a\u2728",
-        "img_path": "img\/watch.jpg"
+        "img_path": "https:\/\/trade-store.com\/uploads\/2022_08_1660513097.webp"
     },
     {
         "id": 3,
@@ -31,7 +31,7 @@
         "price_befor_discount": "1000",
         "type": "clothes",
         "details": "Innovative athletic tee crafted from ultra-lightweight, breathable fabric designed to wick moisture and keep you cool during intense workouts for peak performance.   Features advanced anti-bacterial technology to combat odors, with a flexible raglan sleeve design that ensures unrestricted movement and minimizes skin friction.   Boasts modern details like reinforced seams and subtle reflective accents for safety, available in bold, sporty colors to match any style.   Perfect for running, high-intensity training, or casual wear, thanks to its quick-drying, sweat-resistant fabric that stays comfortable all day.   Choose it to transform every workout into a stylish, energizing experience!",
-        "img_path": "img\/t-shirt.jpg"
+        "img_path": "https:\/\/www.deepa-sport.com\/uploads\/products\/hXwJ39wBGRnUE2uBYfHh11thP7Cu8BTbrkmHAxKa.jpg"
     },
     {
         "id": 4,
@@ -67,6 +67,15 @@
         "price_befor_discount": "300",
         "type": "accessories",
         "details": "Elegant timepiece crafted with precision engineering, featuring a sleek stainless steel case and scratch-resistant sapphire crystal for enduring clarity. Showcases a minimalist dial with luminous hands and markers, paired with a genuine leather strap that combines sophistication with all-day comfort. Water-resistant up to 50 meters, perfect for daily wear, business meetings, or formal events, blending timeless design with modern functionality. Powered by a reliable automatic movement, this watch effortlessly elevates your style while keeping you punctual in every moment. Choose it to adorn your wrist with a symbol of refined taste and unwavering reliability! \u231a\u2728",
-        "img_path": "https:\/\/m.media-amazon.com\/images\/I\/61I2vgUF45L.__AC_SX300_SY300_QL70_ML2_.jpg"
+        "img_path": "https:\/\/r2media.horizondm.com\/catalog\/product\/cache\/257553d71735e96dcdf7e87f4b22e6bc\/h\/u\/huawei_watch_fit3_-_gray-1.jpg"
+    },
+    {
+        "id": 8,
+        "product_name": "wristband Black Men’s ",
+        "price": "100",
+        "price_befor_discount": "150",
+        "type": "accessories",
+        "details": "Product Name: Sleek Black Men\u2019s Bracelet**   **Material:** Durable Stainless Steel \/ Matte Black Leather  **Design:** Minimalist, adjustable clasp for a perfect fit.   **Versatility:** Pairs effortlessly with casual or formal outfits.   **Durability:** Scratch-resistant, waterproof, and hypoallergenic.",
+        "img_path": "https:\/\/1.bp.blogspot.com\/-20HpJc-oihU\/XbW9oNFi4RI\/AAAAAAABtRI\/ImUdvgDLzwIhhWNvB65mFGWZShc7vHDTQCLcBGAsYHQ\/s400\/22728833_1580455218670418_7429295436021493496_n.jpg"
     }
 ]

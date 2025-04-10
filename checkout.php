@@ -26,6 +26,8 @@ endif;
                             <?php
                     $total=0;
                     $total_price=0;
+                    $product_name=[];
+                    $quantity=[];
                     $file = realpath(__DIR__ . "/data/cart.json");
             if (!empty(get_jsonfile($file))) {
                 foreach (get_jsonfile($file) as $product ) {

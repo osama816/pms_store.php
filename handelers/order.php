@@ -8,20 +8,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 
-$error = validate_order( $name, $email,$address,$phone,$notes);
+$error = validate_order($name, $email, $address, $phone, $notes);
 if (!empty($error)) {
     setmessage("danger", $error);
     header('Location:../checkout.php ');
     exit;
 }
 
-if (addorder( $name, $email,$address,$phone,$notes,$total_price)) {
+$cart_file = realpath(__DIR__ . "/../data/cart.json");
+$products = get_jsonfile($cart_file);
+
+if (addorder($name, $email, $address, $phone, $notes, $total_price, $products)) {
     setmessage("success", "add order success");
     delet_all_product();
     header('Location:../checkout.php ');
     exit;
 } else {
-    setmessage("danger", "add oeder fail");
+    setmessage("danger", "add order fail");
     header('Location:../checkout.php ');
     exit;
 }

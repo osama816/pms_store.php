@@ -115,7 +115,7 @@ function deletproduct_cart($id)
 }
 
 
-function addorder($name, $email, $address, $phone, $notes, $total_price)
+function addorder($name, $email, $address, $phone, $notes, $total_price, $products)
 {
     $file = realpath(__DIR__ . "/../data/order.json");
     $order = get_jsonfile($file);
@@ -123,20 +123,21 @@ function addorder($name, $email, $address, $phone, $notes, $total_price)
         $order = [];
     }
     $id = empty($order) ? 1 : max(array_column($order, 'id')) + 1;
-    $data =
-        [
-            "id" => $id,
-            "name" => $name,
-            "email" => $email,
-            "address" => $address,
-            "phone" => $phone,
-            "notes" => $notes,
-            "total_price" => $total_price,
-        ];
+    $data = [
+        "id" => $id,
+        "name" => $name,
+        "email" => $email,
+        "address" => $address,
+        "phone" => $phone,
+        "notes" => $notes,
+        "total_price" => $total_price,
+        "products" => $products,
+        "status" => "pending",
+        "created_at" => date("Y-m-d H:i:s")
+    ];
     $order[] = $data;
     file_put_contents($file, json_encode($order, JSON_PRETTY_PRINT));
     return true;
-
 }
 
 
@@ -218,8 +219,15 @@ function delet_product($id)
 function delet_order($id)
 {
     $file = realpath(__DIR__ . "/../data/order.json");
+    if (!file_exists($file)) {
+        return false;
+    }
 
-    $order = file_exists($file) ? json_decode(file_get_contents($file), true) : [];
+    $order = json_decode(file_get_contents($file), true);
+    if (!is_array($order)) {
+        $order = [];
+    }
+
     $found = false;
     foreach ($order as $key => $value) {
         if ($id == $value["id"]) {
@@ -228,6 +236,7 @@ function delet_order($id)
             break;
         }
     }
+
     if (!$found) {
         return false;
     }

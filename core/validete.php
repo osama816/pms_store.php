@@ -99,6 +99,7 @@ function validate_order($name, $email, $address, $phone, $notes)
             "address" => $address,
             "phone" => $phone,
             "notes" => $notes,
+
         ];
 
     foreach ($date as $key => $value) {

@@ -1,10 +1,10 @@
 <?php require_once('inc/header.php'); ?>
 
 <!-- Section-->
-<section class="py-5">
-    <div class="container px-4 px-lg-5 mt-5">
+<section class="py-4">
+    <div class="container px-3 px-lg-4 mt-4">
         <div class="row">
-            <div class="col-8 mx-auto">
+            <div class="col-md-8 mx-auto">
                 <h2>New product </h2>
                 <form action="handelers/add_product.php" class="form border my-2 p-3" method="POST">
                     <div class="mb-3">
@@ -45,17 +45,17 @@
     </div>
     <div class="form border my-2 p-3">
         <ul class="navbar-nav mb-2 mb-lg-0">
-            <li class="nav-item ms-auto" style="transform: translateX(-800px);">
+            <li class="nav-item d-flex justify-content-center">
                 <a class="btn btn-success" href="order.php">Order</a>
             </li>
         </ul>
     </div>
-    <div class="col-8 mx-auto">
+    <div class="col-md-8 mx-auto">
     <h2> product </h2>
-    <div class="container px-4 px-lg-5 mt-5">
+    <div class="container px-3 px-lg-4 mt-4">
         <div class="row">
-            <div class="col-12">
-                <table class="table table-bordered">
+            <div class="col-12" style="overflow-x: auto; width: 100%;">
+                <table class="table table-bordered" style="min-width: 800px;">
                     <thead>
                         <tr>
                             <th scope="col">#</th>

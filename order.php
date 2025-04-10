@@ -14,6 +14,10 @@
                             <th scope="col">phone</th>
                             <th scope="col">Notes</th>
                             <th scope="col">Total Price</th>
+                            <th scope="col">status</th>
+                            <th scope="col">created_at</th>
+                            <th scope="col">products</th>
+                            <th scope="col"></th>
                         </tr>
                     </thead>
                     <tbody>
@@ -28,8 +32,19 @@
                     <td> {$product['address']}</td>
                     <td> {$product['phone']}</td>
                     <td> {$product['notes']}</td>
-                    <td>$ {$product['total_price']}</td>
-                    <td>
+                    <td> {$product['total_price']}</td>
+                    <td> {$product['status']}</td>
+                    <td> {$product['created_at']}</td><td>";
+                    foreach ($product['products'] as $cart ) {
+                        $total=$cart['price']*$cart['quantity'];
+                        echo " 
+                                                    <li class='border p-2 my-1'> {$cart['product_name']} :
+                                    <span class='text-success mx-2 mr-auto bold'>{$cart['quantity']} x {$cart['price'] }$     = {$total}$ </span>
+                                </li>
+                            ";
+                        }
+                        
+                    echo " </td><td>
                     <form action='handelers\delet_order.php' method='post'>
                     <input type='hidden' name='id' value=' {$product['id']}' >
                     <button class='btn btn-danger btn-sm'>delete</button>
