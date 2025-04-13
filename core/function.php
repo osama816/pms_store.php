@@ -74,16 +74,27 @@ function LoginUser($email, $password)
 }
 
 
-function addcart($price, $product_name, $quantity)
+function addcart($price, $product_name, $quantity, $product_id)
 {
     $file = realpath(__DIR__ . "/../data/cart.json");
     $cart = get_jsonfile($file);
     if (!is_array($cart)) {
         $cart = [];
     }
+    
+    // Check if product already exists in cart
+    foreach ($cart as &$item) {
+        if ($item['product_id'] == $product_id) {
+            $item['quantity'] += $quantity;
+            file_put_contents($file, json_encode($cart, JSON_PRETTY_PRINT));
+            return true;
+        }
+    }
+    
     $id = empty($cart) ? 1 : max(array_column($cart, 'id')) + 1;
     $data = [
         "id" => $id,
+        "product_id" => $product_id,
         "price" => $price,
         "product_name" => $product_name,
         "quantity" => $quantity

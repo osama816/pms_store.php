@@ -1,4 +1,3 @@
-
 <?php
 require_once "../core/function.php";
 require_once "../core/validete.php";
@@ -19,12 +18,12 @@ $cart_file = realpath(__DIR__ . "/../data/cart.json");
 $products = get_jsonfile($cart_file);
 
 if (addorder($name, $email, $address, $phone, $notes, $total_price, $products)) {
-    setmessage("success", "add order success");
+    setmessage("success", "Order placed successfully");
     delet_all_product();
-    header('Location:../checkout.php ');
+    header('Location:../orders.php');
     exit;
 } else {
-    setmessage("danger", "add order fail");
-    header('Location:../checkout.php ');
+    setmessage("danger", "Failed to place order");
+    header('Location:../checkout.php');
     exit;
 }

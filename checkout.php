@@ -26,16 +26,17 @@ endif;
                             <?php
                     $total=0;
                     $total_price=0;
-                    $product_name=[];
-                    $quantity=[];
+
                     $file = realpath(__DIR__ . "/data/cart.json");
             if (!empty(get_jsonfile($file))) {
                 foreach (get_jsonfile($file) as $product ) {
-                    $total=$product['price']*$product['quantity'];
+                    $quantity=isset($product['quantity'])?$product['quantity']:1;
+                    $total=$product['price']*$quantity;
                     $total_price+=$total;
+                    
                     echo " 
                                                 <li class='border p-2 my-1'> {$product['product_name']} -
-                                <span class='text-success mx-2 mr-auto bold'>{$product['quantity']} x {$product['price'] }$     = {$total}$ </span>
+                                <span class='text-success mx-2 mr-auto bold'>{$product['quantity']} x {$quantity }$     = {$total}$ </span>
                             </li>
                         ";
                     }
@@ -49,14 +50,8 @@ endif;
             <div class="col-8">
                 <form action="handelers/order.php" class="form border my-2 p-3 "method="post">
                     <div class="mb-3">
-                        <div class="mb-3">
-                            <label for="">Name</label>
-                            <input type="text" name="name" id="" class="form-control">
-                        </div>
-                        <div class="mb-3">
-                            <label for="">Email</label>
-                            <input type="email" name="email" id="" class="form-control">
-                        </div>
+                            <input type="hidden" name="name" value="<?=$_SESSION["user"]["name"]?>" id="" class="form-control">
+                            <input type="hidden" name="email" value="<?=$_SESSION["user"]["email"]?>" id="" class="form-control">
                         <div class="mb-3">
                             <label for="">Address</label>
                             <input type="text" name="address" id="" class="form-control">

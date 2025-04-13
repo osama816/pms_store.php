@@ -54,21 +54,33 @@
                                 </div>
                             </div>
                             <!-- Product actions-->
-
+                            <?php
+                            $file_cart = realpath(__DIR__ . "/data/cart.json");
+                            $cart_products = get_jsonfile($file_cart);
+                            $product_in_cart = false;
+                            
+                            if (!empty($cart_products)) {
+                                foreach ($cart_products as $cart) {
+                                    if ($cart['product_id'] == $product["id"]) {
+                                        $product_in_cart = true;
+                                        break;
+                                    }
+                                }
+                            }
+                            
+                            if (!$product_in_cart):
+                            ?>
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                                 <div class="text-center">
                                     <form action="handelers/add_cart.php" method="POST">
                                         <input type="hidden" name="product_name" value="<?= $product["product_name"] ?>">
                                         <input type="hidden" name="price" value="<?= $product["price"] ?>">
-                                        <div class="input-group mb-3" style="max-width: 150px; margin: 0 auto;">
-                                            <input type="number" name="quantity" class="form-control" value="1" min="1"
-                                                max="10">
-                                        </div>
+                                        <input type="hidden" name="product_id" value="<?= $product["id"] ?>">
                                         <button type="submit" class="btn btn-outline-dark mt-auto">Add to cart</button>
                                     </form>
-
                                 </div>
                             </div>
+                            <?php endif; ?>
                         </div>
                     </div>
                 <?php endforeach; ?>

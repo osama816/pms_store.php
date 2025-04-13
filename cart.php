@@ -33,13 +33,21 @@
                         $total_price = 0;
                         if (!empty(get_jsonfile($file))) {
                             foreach (get_jsonfile($file) as $product) {
-                                $total = $product['price'] * $product['quantity'];
+                                $total = $product['price'] *( isset($product['quantity'])?$product['quantity']:1);
                                 $total_price += $total;
                                 echo " <tr>
                     <td>{$product['id']}</td>
                     <td> {$product['product_name']}</td>
                     <td>$ {$product['price']}</td>
-                    <td> {$product['quantity']}</td>
+                    <td> 
+                     <form action='handelers/update_quantity.php' method='post'>
+                     <div class='input-group mb-3' style='max-width: 150px; margin: 0 auto;'>
+                    <input type='number' name='quantity' class='form-control' value='{$product['quantity']}' min='1' max='10'>
+                    <input type='hidden' name='id' value='{$product['id']}'>
+                    <button type='submit' class='btn btn-outline-primary'>Update</button>
+                    </div>
+                    </form>
+                    </td>
                     <td>$ {$total}</td>
                     <td>
                     <form action='handelers\deletproduct_cart.php' method='post'>
@@ -69,3 +77,5 @@
     </div>
 </section>
 <?php require_once('inc/footer.php'); ?>
+
+
