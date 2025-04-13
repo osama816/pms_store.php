@@ -174,14 +174,13 @@ function delet_all_product()
 
 function Loginadmin($email, $password)
 {
-    if ($email == "elgendyo240@gmail.com" && $password == "123456") {
+    if ($email == "admin@gmail.com" && $password == "123456") {
         session_start();
         $_SESSION["user"] = [
             "name" => "admin"   
         ];
         return true;
     }
-
 
     return false;
 }
