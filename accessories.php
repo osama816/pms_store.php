@@ -83,6 +83,15 @@
                                 </div>
                             </div>
                             <?php endif; ?>
+                            <?php
+                            if ($product_in_cart):
+                            ?>
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center">
+                                        <button type="submit" class="btn btn-outline-dark mt-auto">product in cart</button>
+                                </div>
+                            </div>
+                            <?php endif; ?>
                         </div>
                     </div>
                 <?php endforeach; ?>
