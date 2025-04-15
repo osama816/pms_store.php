@@ -1,4 +1,6 @@
-<?php require_once('inc/header.php'); ?>
+<?php require_once('inc/header.php');
+
+?>
 <?php  
 if(!isset($_SESSION["user"])):
     setmessage("danger", "shoud be Login");

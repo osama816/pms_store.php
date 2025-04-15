@@ -13,7 +13,7 @@
             2,
             5
         ],
-        "rating": 2.79999999999999982236431605997495353221893310546875
+        "rating": 2.8
     },
     {
         "id": 2,
@@ -71,7 +71,7 @@
     },
     {
         "id": 8,
-        "product_name": "wristband Black Men’s ",
+        "product_name": "wristband Black Men\u2019s ",
         "price": "100",
         "price_befor_discount": "150",
         "type": "accessories",

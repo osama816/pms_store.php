@@ -21,8 +21,9 @@ endif;
 <section class="py-5">
     <div class="container px-4 px-lg-5 mt-5">
         <div class="row">
+        <div class="col-12" style="overflow-x: auto; width: 100%;">
             <div class="col-12">
-                <table class="table table-bordered">
+                <table class="table table-bordered" style="min-width: 800px;">
                     <thead>
                         <tr>
                             <th scope="col">Order ID</th>
@@ -71,6 +72,7 @@ endif;
                     </tbody>
                 </table>
             </div>
+        </div>
         </div>
     </div>
 </section>

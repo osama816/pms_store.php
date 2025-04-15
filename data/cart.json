@@ -1,16 +1,1 @@
-[
-    {
-        "id": 1,
-        "product_id": "3",
-        "price": "900",
-        "product_name": "Zamalek_Shirt",
-        "quantity": 1
-    },
-    {
-        "id": 2,
-        "product_id": "2",
-        "price": "200",
-        "product_name": "watch",
-        "quantity": 1
-    }
-]
+[]
