@@ -1,3 +1,3 @@
 #email and password for store control badg
-##email : elgendyo240@gmail.com
+##email : admin@gmail.com
 ##password : 123456
